@@ -16,7 +16,7 @@ class mySpider(scrapy.Spider):
     print("Header:")
     print("**********")
     for x in h.headers:
-        print("\t ", x, ":", h.headers[x])
+        print("\t", x, ":", h.headers[x])
     print("**********")
     # This will modify the headers user-agent
     headers = {
