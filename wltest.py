@@ -8,8 +8,9 @@ import unittest
 import scrapy
 
 class mySpider(scrapy.Spider):
-    url = " http://172.18.58.238/index.php"
+    url = " http://172.18.58.238/multi"
     r = requests.get(url)
+    print(r.text)
     print("Status code:")
     print("\t *", r.status_code)
     h = requests.head(url)
